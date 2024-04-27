@@ -200,7 +200,7 @@ module.exports = async function(req){
                 const { sourceAddress, destinationAddress, amounts } = await fetchTransaction(req.body.notification.id, sessionTokenResponse.data.userToken)
                 const { symbol } = await tokenLookup(req.body.notification.tokenId)
                 mailSubject = "Outbound Transfer"
-                parsedHTML = templates["transactions.inbound"](req.body.notification.walletId, sourceAddress, destinationAddress, amounts[0], symbol, req.body.notification.updateDate, req.body.notification.blockchain, req.body.notification.errorReason, req.body.notification.state, req.body.notification.txHash, req.body.timestamp)
+                parsedHTML = templates["transactions.outbound"](req.body.notification.walletId, sourceAddress, destinationAddress, amounts[0], symbol, req.body.notification.updateDate, req.body.notification.blockchain, req.body.notification.errorReason, req.body.notification.state, req.body.notification.txHash, req.body.timestamp)
                 break;
             }
             case "challenges.createWallet": {
