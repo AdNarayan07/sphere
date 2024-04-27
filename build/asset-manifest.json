@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b3cdfa6.css",
+    "main.js": "/static/js/main.71b7d6b3.js",
+    "static/media/fontello.eot?99167729": "/static/media/fontello.6d3f7c2083274673c091.eot",
+    "static/media/fontello.ttf?99167729": "/static/media/fontello.c7c0438dca66ca2a485f.ttf",
+    "static/media/fontello.woff?99167729": "/static/media/fontello.9d4498f7ef097ca57f9a.woff",
+    "static/media/fontello.svg?99167729": "/static/media/fontello.ea6ef8bce6172a2511a8.svg",
+    "index.html": "/index.html",
+    "main.5b3cdfa6.css.map": "/static/css/main.5b3cdfa6.css.map",
+    "main.71b7d6b3.js.map": "/static/js/main.71b7d6b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b3cdfa6.css",
+    "static/js/main.71b7d6b3.js"
+  ]
+}
