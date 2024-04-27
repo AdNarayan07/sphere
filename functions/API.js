@@ -156,6 +156,7 @@ async function sendUserData(data, status, profile, firstWalletId) {
                 wallets = wallets.filter((e) => e.id !== firstWalletId);
                 wallets.unshift(firstWallet[0]);
             }
+            if(!wallets[0]?.id) return tokens = []
             const tokensResponse = await fetchTokens(data.user.id, wallets[0]?.id, sessionTokenResponse.data.userToken)
             tokens = tokensResponse.data.tokenBalances || []
         }
